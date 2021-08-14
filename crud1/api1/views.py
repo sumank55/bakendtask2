@@ -9,8 +9,8 @@ from rest_framework.filters import SearchFilter,OrderingFilter
 class EmployeeView(viewsets.ModelViewSet):
     queryset = Employee.objects.all()
     serializer_class =  EmployeeSerializers
-    filter_backends = [SearchFilter,OrderingFilter]
-    search_fields = ['title','first_name','last_name','email']
+    # filter_backends = [SearchFilter,OrderingFilter]
+    # search_fields = ['title','first_name','last_name','email']
     
     
     
